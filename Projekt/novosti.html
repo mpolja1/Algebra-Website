@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti</title>
+    <link rel="stylesheet" href="css/novosti.css">
+    <link rel="shortcut icon" href="img/Algebra-logo.png">
+    <script src="https://kit.fontawesome.com/88613b7ebf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/Algebra-logo.png" alt="logo"> 
+        </div>
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars" ></i>
+           </button>
+        
+            <ul type="none" class="nav_link" id="nav_link">          
+                <li> <i class="fas fa-home"></i><a href="Pocetna.html" > Početna</a></li>
+                <li> <i class="far fa-comments"></i> <a href="O nama.html">O nama</a></li>
+                <li><i class="fas fa-exclamation-circle"></i> <a href="novosti.html">Novosti</a></li>
+                <li><i class="fas fa-exclamation-circle"></i> <a href="nastavni-plan.html">Nastavni plan</a></li>
+                <li><i class="fas fa-envelope"></i><button id="myBtn">Kontakt</button></li>
+            </ul>
+        </nav >
+        
+   
+   
+        <div class="novosti">
+            <h2>Novosti</h2>
+        </div>
+        <hr class="horizontal">
+        <div class="flex-container">
+            <div class="slika1">
+               <a href="novosti1.html"><img src="img/novost1.jpg" alt="novosti1">  
+                <p> <span>28.08.2019</span> Student Josip Stanišić 12. je sistemaš svijeta dobitnik medalje izvrnosti na natjecanju WorldSkill Kazan 2019</p></a> 
+            </div> 
+            <div class="slika2">           
+                <a href="novosti2.html"><img src="img/novost2.jpg" alt="">
+                <p><span>22.07.2019</span>Nagrađujemo izvrsnost.Objavljujemo dobitnike stipendijskog natječaja 2018./2019.!</p>
+            </a>
+            </div>
+                <div class="slika3">
+                   <a href="novosti3.html"><img src="img/novost3.jpg" alt="">                 
+                    <p> <span>18.04.2019</span>  Digitalno junior ljeto</p></a> 
+                </div>
+        </div>
+        <footer>
+            <p>Budi izvrstan u onom što voliš</p>
+            <p class="second-word">Zaiskri</p>
+        </footer>
+
+        <div class="modal-bg">
+            <div class="modal" id="myModal">
+              <p>
+                  <i class="fas fa-envelope"></i>
+                      Kontaktirajte nas
+                      <span class="close-kontakt">&times;</span>
+              </p>      
+              <hr class="hr-kontakt">
+              <form method="post"  action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                  <label class="contact-form-label" for="name">Puno ime:</label>
+                  <input autofocus type="text" class="contact-form-text" name="name" placeholder="Unesite ime">
+                  <label class="contact-form-label" for="email">E-mail:</label>
+                  <input type="email" class="contact-form-text" name="email" placeholder="Unesite e-mail">
+                  <label class="contact-form-label">Vaznost poruke: </label>
+                  <select class="contact-form-text" name="importance">
+                      <option value="Niska">Niska</option>
+                      <option value="Visoka">Visoka</option>
+                  </select>
+                  <label class="contact-form-label" for="poruka">Vaša poruka: </label>
+                  <textarea class="contact-form-text" placeholder="Poruka" name="message" required></textarea>
+                  <label class="contact-form-label" for="novosti">Primaj newsletter:
+                      <input type="checkbox" name="newsletter">
+                  </label>
+                 <input class="contact-form-submit" type="submit"value="Pošalji">         
+                 <input class="contact-form-reset" type="reset"value="Odustani">
+              </form>
+            </div>
+          </div>
+          <script src="/js/modelWindow.js"></script>
+          <script src="/js/responsive.js"></script>
+</body>
+</html>

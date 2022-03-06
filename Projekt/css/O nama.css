@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+body {
+  
+  font-family: sans-serif; 
+}
+html{
+  scroll-behavior: smooth;
+}
+nav {
+  width: 100%;
+  background-color: black;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+}
+.nav1 img{
+  width: 60px;
+    padding: 10px;
+  margin-left: 20px;
+}
+nav a,button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  font-size: 1em;
+  background-color: black;
+  cursor: pointer;
+}
+nav li{
+  list-style: none;
+  padding: 5px;
+  
+}
+nav i {
+  color: gold;
+  padding-right: 5px;
+}
+.nav1{
+  display:flex;
+  align-items: center;
+}
+.nav2 {
+  display:flex;
+  margin-right: 1em;
+  animation-duration: 1.5s;
+  animation-direction:normal;
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+.nav2 a {
+  padding: 3px;
+  color: goldenrod;
+  text-decoration: none;
+}
+.header-foto {
+  margin: 0px;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/img/kampus-iz-zraka-min-1.jpg);
+  
+  -webkit-animation-name: photosize;
+  animation-name: photosize;
+  animation-duration: 1s;
+  animation-direction:alternate;
+}
+#nasevrijednosti,#povijest,#algebragrupa{
+  margin: 50px;
+  color: rgb(126, 12, 116);
+  text-align: center;
+}
+#kakoDoNas{
+  color: rgb(126, 12, 116);
+  margin-bottom: 50px;
+}
+
+.onama{
+  margin: 20px;
+  font-size: 30px;
+  -webkit-animation-name: slideTop;
+  animation-name: slideTop;
+  animation-duration: 1s;
+  animation-direction:alternate;
+  text-align: center;
+}
+.horizontal {
+  margin: auto;
+  width: 40%;
+  border: 2px solid gold;
+}
+
+.wrapper i,
+.povijest i,
+.algebra-grupa i {
+  padding-right: 15px;
+}
+
+
+.povijest p,
+.algebra-grupa p,
+.wrapper p {
+  font-family: "Brush Script MT";
+  font-size: x-large;
+  color: black;
+  background-color: whitesmoke;
+  padding:1% 15%;
+}
+
+.algebra-grupa h2,
+.povijest h2,
+.wrapper h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: rgb(126, 12, 116);
+  padding-top: 100px;
+}
+#nasevrijednosti,#povijest,#algebragrupa,#kakoDoNas{
+  padding-top: 83px;
+}
+.algebra-grupa,
+.wrapper,
+.povijest {
+  text-align: left;
+}
+
+.flex-box1{
+  display: flex;
+  margin: 50px;
+  text-align: justify;
+  justify-content: center;
+    
+}
+.flex-content{
+  border: 1px solid rgba(185, 184, 184, 0.747);
+  border-radius: 5px;
+  margin: 5px;
+  width: 450px;
+  padding-bottom: 30px;
+
+}
+.flex-content h3{
+  font-size: 25px;
+  text-align: left;
+  font-weight: normal;
+  margin: 10px;
+  text-transform: uppercase;
+}
+hr{
+  margin: 10px;
+}
+.flex-content p{
+  padding: 10px;
+
+}
+.grid-box1{
+  display: grid;
+  grid-gap: 15px;
+  text-align: justify;
+  justify-content: center;
+  margin: 50px 150px 0px 150px;
+  grid-template-rows: (3,270px);
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.grid-box1-content{
+  border: 1px solid rgba(185, 184, 184, 0.747);
+padding: 10px;
+border-radius: 5px;
+}
+.grid-box1-content h2{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 10px;
+}
+.grid-box1-content p{
+  border-top: 1px solid;
+  margin: 10px;
+  padding: 10px;
+
+}
+.grid-box1 span{
+  color: rgba(19, 84, 204, 0.973);
+}
+.grid-box-images{
+  display: grid;
+  grid-column-gap: 3em;
+  margin: 50px 150px 0px 150px;
+  grid-template-rows: repeat(2,150px)150px;
+  grid-template-columns: repeat(4,1fr);
+}
+.grid-box-images-content h2{
+  border-bottom: 1px solid;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: justify;
+  justify-content: center;
+
+}
+.grid-box-images-content img{
+  margin: 10px;
+  height: 60px;
+}
+
+.grid-kakodonas{
+  background-image: url(/img/kakoDoNas.jpg);
+  background-size: cover;
+  display: grid;
+  grid-gap: 35px;
+  text-align: justify;
+  justify-content: center;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 500px;
+ 
+}
+
+
+.grid-kakodonas :nth-child(3){
+  margin-bottom:30px;
+}
+.grid-kakodonas iframe{
+  width: 930px;
+  min-width: 100%;
+}
+.grid-kakodonas-content{
+  border: 1px solid rgba(185, 184, 184, 0.747);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: white;
+ 
+}
+.grid-kakodonas-content h3{
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.grid-kakodonas-content p{
+  font-family: 'Times New Roman', Times, serif;
+  margin:20px 50px 20px 50px;
+}
+.grid-kakodonas i{
+  color: blue;
+  padding-right: 5px;
+  font-size: 15px;
+}
+#kakoDoNas{
+  text-align: center;
+}
+footer {
+  background-image: url(/img/zaiskri-bg.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+  
+}
+footer p {
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.second-word {
+  color: red;
+}
+a:hover,button:hover{
+  color: gold;
+}
+.hamburger{
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  display:none;
+  position:absolute;
+  top: 1.8rem;
+  right:10px;
+}
+.hamburger:focus{
+  outline: none;
+}
+
+
+@keyframes photosize{
+  from{
+    height: 50px;
+  }
+  to{
+    height: 350px;
+  }
+
+}
+
+@keyframes slideTop {
+  from{
+    margin-top: 400px;   
+  }
+  to{
+    margin-top:20px;
+  }
+  
+}
+
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media  (max-width: 768px) {
+  .flex-box1,.grid-box1,.grid-box-images,.grid-kakodonas{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+  }
+    .overlay {
+      font-size: 0.5em;
+    }
+    .hamburger{
+        display:flex;
+        margin-left: 1em;      
+    }
+    nav{
+    flex-direction: column;
+    position: static;
+    }
+   nav .active{
+     display:flex;
+     flex-direction: column;
+   }
+}

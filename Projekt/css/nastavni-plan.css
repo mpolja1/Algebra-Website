@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;  
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    margin: 0px;
+    justify-content:flex-start;
+    padding-left: 20px;
+    
+}
+
+li,a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none; 
+    
+}
+.fas {
+    color: gold;
+}
+.logo{
+  padding: 10px;
+  width: 65px;
+}
+
+
+ul button{
+  border: 0;
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav_link li{
+  list-style: none;  
+    display: inline-block;       
+    padding-right: 5px;
+    padding-left: 20px;
+}
+.nav_link li button{
+  padding-left: 5px;
+}
+.far{
+    color:gold
+}
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.horizontal{
+    border-radius: 70px;
+    width: 50%;
+    margin: auto;
+    border: 2px solid gold;
+}
+.naslov{
+    -webkit-animation-name: slideTop;
+    animation-name: slideTop;
+    animation-duration: 1s;
+    animation-direction:alternate;
+}
+
+footer {
+    background-image: url(/img/zaiskri-bg.jpg);
+    position:fixed;
+    bottom:0;
+    padding-bottom: 40px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  footer p {
+      margin-top: 60px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .second-word {
+    color: rgb(196, 4, 4);  
+  }
+  a:hover,button:hover{
+    color: gold;
+  }
+ 
+  .search-bar{
+    -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-direction:alternate;
+}
+.search-bar input{
+  
+    height: 25px;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 4px #7bc1f7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-bar input:focus{
+  outline: none;
+}
+.search-bar label{
+  font-weight: bold;
+}
+.search-bar input{
+  margin-top:10px;
+}
+.search-bar-table {
+  display:flex;
+  gap:50px;
+  margin:50px;
+  margin-left: 350px;
+  
+}
+.search-bar-table table {
+  border-collapse:collapse;
+}
+.search-bar-table table thead{
+  border-bottom: 2px solid rgba(190, 187, 187, 0.637);
+  border-top: 2px solid rgba(190, 187, 187, 0.637);
+  font-weight: bold;
+}
+.search-bar-table table tfoot{
+  border-top: 4px solid black;
+}
+.btn-delete{
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+.search-bar-table tbody {
+  background-color: rgb(243, 241, 241);
+}
+.search-bar-table td{
+  padding: 5px;
+}
+.btn-delete:hover{
+  color: white  ;
+  cursor: pointer;
+background-color: rgb(202, 18, 18);
+}
+
+ body .ui-autocomplete .ui-menu-item .ui-corner-all {
+    background-color: white;
+    font-weight: bold;
+    border:none;
+  }
+  .hamburger{
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    display:none;
+    position:absolute;
+    top: 1.8rem;
+    right:10px;
+}
+.hamburger:focus{
+    outline: none;
+}
+tfoot :nth-child(1){
+  font-weight: bold;
+}
+tfoot :nth-child(2){
+  font-weight: bold;
+  color:red;
+}
+tfoot :nth-child(3){
+  font-weight: bold;
+  color:red;
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideTop {
+    from{
+      margin-top: 10%;   
+    }
+    to{
+      margin-top:0;
+    }
+    
+}
+
+@media  (max-width: 768px) {
+ .search-bar-table{
+   margin:0;
+   width:20%;
+   justify-content: none;
+   flex-direction: column;
+   padding: 15px;
+   position: absolute;
+ }
+  nav{
+    display:block;
+  }
+  .hamburger{
+    display:block;
+  }
+
+ .nav_link{
+   width:100%;
+   display: none;
+   padding:0;
+   flex-direction:column;
+   gap: 15px;
+   
+ }
+ .nav_link.active{
+   display:flex;
+   flex-direction: column;
+ }
+ 
+ }
+ 
+
+@media screen and (max-width: 1200px) {
+  .search-bar-table{
+    margin:15px;
+    width:25%;
+   flex-direction: column;
+}
+
+}

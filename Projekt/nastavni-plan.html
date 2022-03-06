@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavni-Plan</title>
+    <link rel="stylesheet" href="css/nastavni-plan.css">
+    <link rel="shortcut icon" href="img/Algebra-logo.png">
+    <script src="https://kit.fontawesome.com/88613b7ebf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+    rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ 
+   
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="img/Algebra-logo.png" alt="logo">
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars" ></i>
+           </button>
+        <ul type="none" class="nav_link" id="nav_link"> 
+            <li> <i class="fas fa-home"></i><a href="Pocetna.html" > Početna</a></li>
+            <li> <i class="far fa-comments"></i> <a href="O nama.html">O nama</a></li>
+            <li><i class="fas fa-exclamation-circle"></i> <a href="novosti.html">Novosti</a></li>
+            <li><i class="fas fa-exclamation-circle"></i> <a href="nastavni-plan.html">Nastavni plan</a></li>
+            <li><i class="fas fa-envelope"></i><button id="myBtn">Kontakt</button></li>
+        </ul>   
+    </nav>
+<div class="naslov">
+    <h2>Nastavni plan</h2>
+    <hr class="horizontal">
+</div>
+
+<div class="search-bar-table">
+    <div class="search-bar">
+            <label for="kolegij">Naziv Kolegija: </label><br>
+        <input type="text" placeholder="Zapocnite unos naziva kolegija..." size="70" id="kolegij">
+    </div>
+    <table id="tableKolegij" style="display:none">
+        <thead>
+            <tr>
+                <td>Kolegij</td>
+                <td>ECTS</td>
+                <td>Sati</td>
+                <td>P</td>
+                <td>V</td>
+                <td>Tip</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr>
+            <td>Ukupno</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+ <div>
+    <footer>
+        <p>Budi izvrstan u onom što voliš</p>
+        <p class="second-word">Zaiskri</p>
+    </footer>
+</div>
+<div class="modal-bg">
+    <div class="modal" id="myModal">
+      <p>
+          <i class="fas fa-envelope"></i>
+              Kontaktirajte nas
+              <span class="close-kontakt">&times;</span>
+      </p>      
+      <hr class="hr-kontakt">
+      <form method="post"  action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+          <label class="contact-form-label" for="name">Puno ime:</label>
+          <input autofocus type="text" class="contact-form-text" name="name" placeholder="Unesite ime">
+          <label class="contact-form-label" for="email">E-mail:</label>
+          <input type="email" class="contact-form-text" name="email" placeholder="Unesite e-mail">
+          <label class="contact-form-label">Vaznost poruke: </label>
+          <select class="contact-form-text" name="importance">
+              <option value="Niska">Niska</option>
+              <option value="Visoka">Visoka</option>
+          </select>
+          <label class="contact-form-label" for="poruka">Vaša poruka: </label>
+          <textarea class="contact-form-text" placeholder="Poruka" name="message" required></textarea>
+          <label class="contact-form-label" for="novosti">Primaj newsletter:
+              <input type="checkbox" name="newsletter">
+          </label>
+         <input class="contact-form-submit" type="submit"value="Pošalji">         
+         <input class="contact-form-reset" type="reset"value="Odustani">
+      </form>
+    </div>
+  </div>
+      <script src="/js/search-kolegij.js"></script>
+      <script src="/js/modelWindow.js"></script>
+      <script src="/js/responsive.js"></script>
+</body>
+</html>
